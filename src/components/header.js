@@ -1,6 +1,5 @@
 import React from "react";
 import { css } from '@emotion/core';
-import styled from '@emotion/styled';
 import Navegacion from './Nav'
 
 const Header = () => {
@@ -8,7 +7,7 @@ const Header = () => {
     return(
         <header
         css={css`
-            background-color: rgba(44,62,80);
+            background-color: rgba(44,62,75);
             padding: 1rem;
         `}
     >
