@@ -18,7 +18,7 @@ const Footer = ({title}) => {
         <>
         <footer
             css={css`
-                background-color: rgba(44,62,80);
+                background-color: rgba(44,62,75);
                 margin-top: 5rem;
                 padding: 1rem;
             `}
@@ -38,7 +38,8 @@ const Footer = ({title}) => {
 
                 <EnlaceHome
                     to='/'
-                ><h1>La Casa del Duende</h1> </EnlaceHome>
+                ><h1
+                >La Casa del Duende</h1> </EnlaceHome>
             </div>
         </footer>
         <p
