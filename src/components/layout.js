@@ -2,7 +2,7 @@ import React from 'react';
 import {Helmet} from 'react-helmet';
 import { Global, css } from '@emotion/core';
 import Header from './Header';
-import Footer from './footer';
+import Footer from './Footer';
 import useSeo from '../hooks/use-seo';
 
 const Layout = (props) => {

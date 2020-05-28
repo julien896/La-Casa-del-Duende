@@ -1,11 +1,11 @@
 import React from "react"
 import { css } from '@emotion/core';
 import styled from '@emotion/styled';
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import ImagenHotel from "../components/ImagenHotel"
 import ContenidoInicio from "../components/ContenidoInicio"
 import useHabitaciones from '../hooks/use-habitaciones';
-import HabitacionPreview from '../components/habitacionPreview';
+import HabitacionPreview from '../components/HabitacionPreview';
 
 const ListadoHabitaciones = styled.ul`
   max-width: 1200px;

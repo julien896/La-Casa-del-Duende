@@ -1,6 +1,6 @@
 import React from "react"
-import Layout from "../components/layout"
-import ContenidoNosotros from "../components/contenidoNosotros"
+import Layout from "../components/Layout"
+import ContenidoNosotros from "../components/ContenidoNosotros"
 
 
 const Nosotros = () => (
