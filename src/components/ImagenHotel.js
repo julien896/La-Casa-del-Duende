@@ -1,10 +1,10 @@
-import React from 'react';
+﻿import React from 'react';
 import {graphql, useStaticQuery} from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 import styled from '@emotion/styled';
 
 const ImageBackground = styled(BackgroundImage)`
-    height: 700px;
+    height: 650px;
 `;
 const TextoImagen = styled.div`
     background-image: linear-gradient( to top, rgba(34,49,63,.8),rgba(34,49,63,.8)  );

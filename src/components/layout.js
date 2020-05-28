@@ -2,9 +2,13 @@ import React from 'react';
 import {Helmet} from 'react-helmet';
 import { Global, css } from '@emotion/core';
 import Header from './Header';
+import Footer from './footer';
+import useSeo from '../hooks/use-seo';
 
 const Layout = (props) => {
-  
+    const seo = useSeo();
+    const { siteName, fallbackSeo: { description, title } } = seo;
+
     return(
         <>
         <Global
@@ -14,6 +18,9 @@ const Layout = (props) => {
                     font-size: 62.5%;
                     box-sizing: border-box;
                 }
+                *, *:before, *:after {
+                        box-sizing: inherit;
+                    }
                 
                 body {
                     font-size: 18px;
@@ -40,12 +47,16 @@ const Layout = (props) => {
         />
         <Helmet>
             <title>La Casa Del Duende</title>
+            <meta name="description" content={description} />
             <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet"/>
             <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet"/>
 
             </Helmet>
         <Header/>
         {props.children}
+       <Footer 
+                title={title}
+            />
         </>
     );
     
